@@ -7,7 +7,6 @@ SetWorkingDir(A_ScriptDir)
 SetKeyDelay(20, 20) ; 推奨値。必要に応じて調整 (例: SetKeyDelay(10, 10))
 
 ; 初期状態: 大西配列ON
-TraySetIcon("Oonishi.ico") ; Oonishi配列のアイコン
 A_TrayTip := "大西配列 ON"
 
 ; Alt + Spaceで map.ahk へ切り替え
@@ -113,6 +112,7 @@ x & sc009::`
 
 ; あそび
 sc039::Send("😎")
+
 
 
 #HotIf ; #HotIf 条件をリセット
