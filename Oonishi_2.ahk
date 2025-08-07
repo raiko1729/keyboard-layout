@@ -9,13 +9,6 @@ SetKeyDelay(20, 20) ; 推奨値。必要に応じて調整 (例: SetKeyDelay(10,
 ; 初期状態: 大西配列ON
 A_TrayTip := "大西配列 ON"
 
-; Alt + Spaceで remap.ahk へ切り替え
-!Space:: {
-    ; Alt + Space が押されたら keymap.ahk を起動し、自身を終了
-    Run(A_ScriptDir "\keymap.ahk")
-    ExitApp
-}
-
 -::/
 
 w::l
@@ -91,3 +84,4 @@ LShift & sc079::Send("{Backspace}")
 
 
 #HotIf ; #HotIf 条件をリセット
+
